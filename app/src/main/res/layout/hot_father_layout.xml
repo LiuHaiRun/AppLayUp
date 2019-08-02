@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/label_FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_days"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="@color/back_grey_F9F9F9"
+        android:gravity="center"
+        android:text="ss"
+        android:paddingLeft="@dimen/dp_10"
+        android:textColor="@color/grey_first_222222"
+        android:textSize="@dimen/sp_13" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

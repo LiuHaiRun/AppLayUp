@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--带边框的-->
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_26"
+        android:layout_margin="@dimen/dp_5"
+        android:background="@drawable/circle_topic_bg"
+        android:gravity="center"
+        android:text="#用戶"
+        android:textColor="@color/grey_first_222222"
+        android:textSize="@dimen/sp_12" />
+
+    <!--不带边框的-->
+    <TextView
+        android:id="@+id/content_nobg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:text="#用戶"
+        android:textColor="@color/grey_first_222222"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+</RelativeLayout>

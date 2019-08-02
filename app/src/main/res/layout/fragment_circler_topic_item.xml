@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10">
+
+        <com.jy.liuhairui.applayup.design.RoundOrCircleImage
+            android:id="@+id/logo"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            app:type="circle" />
+
+        <TextView
+            android:id="@+id/title"
+            android:text="aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/grey_first_222222"
+            android:layout_toRightOf="@+id/logo"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <include layout="@layout/hot_cut_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="@dimen/dp_10"
+        android:id="@+id/content_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <ImageView
+        android:background="@color/round_shape_grey_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5" />
+</LinearLayout>

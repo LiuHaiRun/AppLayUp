@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="homt_tab_tool_e45040">#E45040</color>
+    <color name="homt_tab_ffffff">#ffffff</color>
+    <color name="grey_first_222222">#222222</color>
+    <color name="grey_second_a4a4a4">#a4a4a4</color>
+    <color name="selector_aaaaaa">#aaaaaa</color>
+    <color name="label_color_4782c4">#4782c4</color>
+    <color name="app_theme_E45040">#E45040</color>
+    <color name="label_4782c4">#4782c4</color>
+    <color name="label_FFFFFF">#FFFFFF</color>
+    <color name="back_grey_F9F9F9">#F9F9F9</color>
+    <color name="blue_theme_3885af">#3885af</color>
+    <color name="round_shape_grey_out">#D8D8D8</color>
+    <color name="round_shape_grey_int">#F9F9F9</color>
+    <color name="round_shape_red_in">#FFB9B2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_loading">#868686</color>
+    <color name="machal_title_to">#EEEEEE</color>
+    <color name="color_fgx">#EAEAE6</color>
+    <color name="color_ECECEC">#ECECEC</color>
+    <color name="black_theme">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="dark_grey">#EDEDED</color>
+    <color name="west_item_bg">#FFF3ED</color>
+    <color name="east_item_bg">#F7F7F7</color>
+    <color name="rank_line">#DBDBDB</color>
+    <color name="grey_second">#a4a4a4</color>
+</resources>

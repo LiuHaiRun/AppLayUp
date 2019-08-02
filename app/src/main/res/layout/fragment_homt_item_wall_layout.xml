@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <com.jy.liuhairui.applayup.design.RoundOrCircleImage
+            android:id="@+id/avarter"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:text="abc"
+                android:textColor="@color/grey_first_222222"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李四"
+                android:textColor="@color/grey_second_a4a4a4"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="bb"
+            android:textColor="@color/grey_second_a4a4a4"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_below="@id/lla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="ss"
+        android:textColor="@color/grey_first_222222"
+        android:textSize="@dimen/sp_13" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_below="@id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:src="@mipmap/ic_launcher" />
+
+    <!--列表分割线-->
+    <ImageView
+        android:layout_below="@id/image"
+        android:src="@color/round_shape_grey_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/red_bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140" />
+
+    <com.youth.banner.Banner
+        android:id="@+id/mybanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_130"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10" />
+
+    <LinearLayout
+        android:id="@+id/center_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mybanner"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <include
+            android:id="@+id/match_left"
+            layout="@layout/match_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/match_layout_right"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:layout_below="@+id/center_ll"
+        android:background="@color/back_grey_F9F9F9" />
+</RelativeLayout>

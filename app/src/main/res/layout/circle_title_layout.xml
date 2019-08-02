@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/center_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <com.jy.liuhairui.applayup.design.RoundImage
+            android:id="@+id/logo_image"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/top_label_bg"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_2"
+            android:text="+关注"
+            android:textColor="@color/app_theme_E45040"
+            android:textSize="@dimen/sp_11" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/logo_image">
+
+            <TextView
+                android:id="@+id/nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/app_theme_E45040"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:id="@+id/second_logo"
+                android:layout_width="@dimen/dp_14"
+                android:layout_height="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_toRightOf="@+id/nick" />
+
+            <ImageView
+                android:id="@+id/vip"
+                android:layout_width="@dimen/dp_14"
+                android:layout_height="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_toRightOf="@+id/second_logo" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nick"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="时间"
+                android:textColor="@color/grey_second_a4a4a4"
+                android:textSize="@dimen/sp_9" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center_rl"
+        android:layout_margin="@dimen/dp_10"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/grey_first_222222"
+        android:textSize="@dimen/sp_14" />
+</RelativeLayout>

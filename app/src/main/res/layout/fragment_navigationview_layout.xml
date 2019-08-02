@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+        <!--头部-->
+        <RelativeLayout
+            android:id="@+id/na_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_180"
+                android:background="@drawable/left_cehua_head" />
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="@string/app_name"
+                android:textColor="@color/homt_tab_ffffff"
+                android:textSize="@dimen/dp_22" />
+
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/a"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:text="@string/header_text"
+                android:textColor="@color/homt_tab_ffffff" />
+
+            <TextView
+                android:id="@+id/btn_dl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/biankong"
+                android:paddingLeft="@dimen/dp_20"
+                android:paddingTop="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingBottom="@dimen/dp_8"
+                android:text="@string/header_btn"
+                android:textColor="@color/homt_tab_ffffff"
+                android:textSize="@dimen/dp_18" />
+
+            <com.jy.liuhairui.applayup.design.RoundImage
+                android:id="@+id/na_img"
+                android:src="@drawable/icon_reward_default_head"
+                android:layout_below="@id/b"
+                android:layout_marginTop="@dimen/dp_20"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50" />
+
+        </RelativeLayout>
+
+        <!--1.背景分割线-->
+        <ImageView
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:layout_below="@id/na_rl"
+            android:background="#E4E2E2" />
+
+        <!--通知-->
+        <LinearLayout
+            android:id="@+id/btn_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c"
+            android:layout_margin="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/my_notification" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="@string/header_notifi"
+                android:textSize="@dimen/dp_14" />
+        </LinearLayout>
+
+        <!--2.背景分割线-->
+        <ImageView
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_below="@id/btn_notification"
+            android:background="#E4E2E2" />
+
+        <!--收藏-->
+        <LinearLayout
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_notification"
+            android:layout_margin="@dimen/dp_10"
+            android:textSize="@dimen/dp_14">
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/my_star" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="@string/header_add"
+                android:textSize="@dimen/dp_14" />
+        </LinearLayout>
+
+        <!--3.背景分割线-->
+        <ImageView
+            android:id="@+id/e"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_below="@id/btn_add"
+            android:background="#E4E2E2" />
+          <!--信息-->
+        <LinearLayout
+            android:id="@+id/btn_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_add"
+            android:layout_margin="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:src="@drawable/my_message" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="@string/header_message"
+                android:textSize="@dimen/dp_14" />
+        </LinearLayout>
+
+        <!--4.背景分割线-->
+        <ImageView
+            android:id="@+id/f"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:layout_below="@id/btn_message"
+            android:background="#E4E2E2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/m"
+            android:layout_below="@id/f" />
+
+        <!---->
+        <LinearLayout
+            android:id="@+id/m"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@color/label_FFFFFF"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:src="@drawable/my_feedback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/header_feedback"
+                    android:textSize="@dimen/dp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_seek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:src="@drawable/my_seek" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/header_seek"
+                    android:textSize="@dimen/dp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:src="@drawable/my_set" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/header_set"
+                    android:textSize="@dimen/dp_18" />
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

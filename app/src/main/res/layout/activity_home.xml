@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <!--主界面-->
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Toolbar-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/homt_tab_tool_e45040">
+
+            <com.jy.liuhairui.applayup.design.RoundImage
+                android:id="@+id/tool_img"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30" />
+
+            <TextView
+                android:id="@+id/tool_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/home_tab_activity"
+                android:textColor="@color/homt_tab_ffffff"
+                android:textSize="@dimen/dp_18" />
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/radiogroup"
+            android:layout_below="@id/tool" />
+
+
+        <!--底部Tab栏-->
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <!--Tab:首页-->
+            <RadioButton
+                android:id="@+id/main_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/home_tab"
+                android:gravity="center"
+                android:text="@string/home_tab_activity"
+                android:textColor="@drawable/tab_text_index" />
+            <!--Tab:比赛-->
+            <RadioButton
+                android:id="@+id/main_match"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/match_tab"
+                android:gravity="center"
+                android:text="@string/match_tab_activity"
+                android:textColor="@drawable/tab_text_index" />
+            <!--Tab:圈子-->
+            <RadioButton
+                android:id="@+id/main_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/circle_tab"
+                android:gravity="center"
+                android:text="@string/circle_tab_activity"
+                android:textColor="@drawable/tab_text_index" />
+            <!--Tab:数据-->
+            <RadioButton
+                android:id="@+id/main_data"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/data_tab"
+                android:gravity="center"
+                android:text="@string/data_tab_activity"
+                android:textColor="@drawable/tab_text_index" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <!--侧滑抽屉-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+
+        <include layout="@layout/fragment_navigationview_layout" />
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

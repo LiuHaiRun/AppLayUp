@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_0_5"
+    android:background="@drawable/hot_cutline_EBEBEB">
+    <!--列表中的分割线-->
+</View>

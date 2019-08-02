@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_data.DataPublicFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2019季后赛"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"/>
+
+        <com.jy.liuhairui.applayup.design.RoundImage
+            android:id="@+id/img"
+            android:layout_toRightOf="@id/title_text"
+            android:src="@drawable/a"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10" />
+
+
+        <com.jy.liuhairui.applayup.design.MyTabView
+            android:id="@+id/tab_view"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@id/img"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+   <!-- <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_toRightOf="@id/date"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:background="@drawable/data_biankong"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        app:tabIndicatorHeight="@dimen/dp_0"
+        app:tabBackground="@drawable/data_color"
+        app:tabSelectedTextColor="@color/label_FFFFFF"
+        android:layout_height="@dimen/dp_25"/>-->
+
+
+      <!--分割线-->
+    <include layout="@layout/hot_cut_line"/>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
