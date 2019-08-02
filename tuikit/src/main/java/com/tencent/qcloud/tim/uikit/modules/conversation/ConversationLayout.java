@@ -11,6 +11,7 @@ import com.tencent.qcloud.tim.uikit.component.TitleBarLayout;
 import com.tencent.qcloud.tim.uikit.modules.conversation.base.ConversationInfo;
 import com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.IConversationAdapter;
 import com.tencent.qcloud.tim.uikit.modules.conversation.interfaces.IConversationLayout;
+import com.tencent.qcloud.tim.uikit.utils.ToastUtil;
 
 public class ConversationLayout extends RelativeLayout implements IConversationLayout {
 

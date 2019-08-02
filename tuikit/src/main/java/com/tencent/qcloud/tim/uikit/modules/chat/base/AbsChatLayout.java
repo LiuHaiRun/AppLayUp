@@ -26,6 +26,7 @@ import com.tencent.qcloud.tim.uikit.modules.chat.layout.message.MessageListAdapt
 import com.tencent.qcloud.tim.uikit.modules.message.MessageInfo;
 import com.tencent.qcloud.tim.uikit.utils.BackgroundTasks;
 import com.tencent.qcloud.tim.uikit.utils.NetWorkUtils;
+import com.tencent.qcloud.tim.uikit.utils.ToastUtil;
 
 
 public abstract class AbsChatLayout extends ChatLayoutUI implements IChatLayout {

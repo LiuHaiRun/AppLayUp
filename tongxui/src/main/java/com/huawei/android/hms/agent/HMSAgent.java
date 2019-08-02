@@ -29,6 +29,7 @@ import com.huawei.android.hms.agent.push.handler.GetTokenHandler;
 import com.huawei.android.hms.agent.push.handler.QueryAgreementHandler;
 import com.huawei.hms.api.HuaweiApiAvailability;
 import com.huawei.hms.api.HuaweiApiClient;
+import com.tencent.qcloud.tim.uikit.utils.ToastUtil;
 
 /**
  * HMSAgent 封装入口类。 提供了HMS SDK 功能的封装，使开发者更聚焦业务的处理。

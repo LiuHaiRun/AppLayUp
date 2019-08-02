@@ -26,6 +26,7 @@ import com.tencent.qcloud.tim.uikit.base.IMEventListener;
 import com.tencent.qcloud.tim.uikit.modules.chat.GroupChatManagerKit;
 import com.tencent.qcloud.tim.uikit.modules.conversation.ConversationManagerKit;
 import com.tencent.qcloud.tim.uikit.utils.FileUtil;
+import com.tencent.qcloud.tim.uikit.utils.ToastUtil;
 
 
 public class MainActivity extends Activity implements ConversationManagerKit.MessageUnreadWatcher {

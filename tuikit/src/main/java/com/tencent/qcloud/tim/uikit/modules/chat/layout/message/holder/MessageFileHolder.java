@@ -9,6 +9,7 @@ import com.tencent.imsdk.TIMFileElem;
 import com.tencent.qcloud.tim.uikit.R;
 import com.tencent.qcloud.tim.uikit.modules.message.MessageInfo;
 import com.tencent.qcloud.tim.uikit.utils.FileUtil;
+import com.tencent.qcloud.tim.uikit.utils.ToastUtil;
 
 public class MessageFileHolder extends MessageContentHolder {
 

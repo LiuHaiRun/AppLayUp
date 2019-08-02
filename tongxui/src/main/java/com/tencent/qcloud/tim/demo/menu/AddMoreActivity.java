@@ -19,6 +19,7 @@ import com.tencent.qcloud.tim.demo.utils.DemoLog;
 import com.tencent.qcloud.tim.uikit.component.TitleBarLayout;
 import com.tencent.qcloud.tim.uikit.utils.SoftKeyBoardUtil;
 import com.tencent.qcloud.tim.uikit.utils.TUIKitConstants;
+import com.tencent.qcloud.tim.uikit.utils.ToastUtil;
 
 public class AddMoreActivity extends Activity {
 

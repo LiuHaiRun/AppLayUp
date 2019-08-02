@@ -19,6 +19,7 @@ import com.tencent.qcloud.tim.uikit.component.video.util.DeviceUtil;
 import com.tencent.qcloud.tim.uikit.utils.FileUtil;
 import com.tencent.qcloud.tim.uikit.utils.TUIKitConstants;
 import com.tencent.qcloud.tim.uikit.utils.TUIKitLog;
+import com.tencent.qcloud.tim.uikit.utils.ToastUtil;
 
 public class CameraActivity extends Activity {
 

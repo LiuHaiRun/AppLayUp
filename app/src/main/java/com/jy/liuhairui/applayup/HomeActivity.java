@@ -33,6 +33,7 @@ import com.jy.liuhairui.applayup.mvp.NavigationViewModel;
 import com.jy.liuhairui.applayup.utils.AppConstants;
 import com.jy.liuhairui.applayup.utils.FragmentUtils;
 import com.jy.liuhairui.applayup.utils.Logger;
+import com.tencent.qcloud.tim.demo.login.LoginForDevActivity;
 import com.tencent.qcloud.tim.demo.main.MainActivity;
 import com.tencent.qcloud.tim.demo.signature.GenerateTestUserSig;
 import com.tencent.qcloud.tim.uikit.TUIKit;
@@ -40,6 +41,7 @@ import com.tencent.qcloud.tim.uikit.base.IUIKitCallBack;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import butterknife.BindView;
 import butterknife.OnClick;
 import fm.jiecao.jcvideoplayer_lib.JCMediaManager;
@@ -313,12 +315,7 @@ public class HomeActivity extends BaseMvpActivity<NavigationViewModel> implement
                 startActivity(intent1);
                 break;
             case R.id.btn_notification://我的通知，跳转到第三方腾讯云通信
-
-                if (mApplication.mLogonIM){
-                    startActivity(new Intent(this, MainActivity.class));
-                }else {
-
-                }
+                startActivity(new Intent(this, LoginForDevActivity.class));
                 break;
             case R.id.btn_add://收藏/历史
                 Toast.makeText(mApplication, "收藏/历史", Toast.LENGTH_SHORT).show();
@@ -372,33 +369,5 @@ public class HomeActivity extends BaseMvpActivity<NavigationViewModel> implement
         }
 
     }
-
-    //--------------------------------
-
-   /* private String account;
-    public void loginIm(final int index) {
-        if (index == 1 && mApplication.mLogonIM) return;
-        if (TextUtils.isEmpty(mApplication.zcName)){
-            showToast("用户未登录");
-            return;
-        }
-        account = mApplication.zcName;
-        String userSig = GenerateTestUserSig.genTestUserSig(account);
-        TUIKit.login(account, userSig, new IUIKitCallBack() {
-            @Override
-            public void onError(String module, final int code, final String desc) {
-                ToastUtil.toastLongMessage("登录失败, errCode = " + code + ", errInfo = " + desc);
-                mApplication.mLogonIM = false;
-            }
-
-            @Override
-            public void onSuccess(Object data) {
-                showToast("登陸成功");
-                mApplication.mLogonIM = true;
-                ImHelper.getSelfInfo();
-                if (index == 2) startActivity(new Intent(HomeActivity.this, MainActivity.class));
-            }
-        });
-    }*/
 
 }

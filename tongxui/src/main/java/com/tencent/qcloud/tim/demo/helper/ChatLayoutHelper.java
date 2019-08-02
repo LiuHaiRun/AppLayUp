@@ -28,6 +28,7 @@ import com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.ICustomMe
 import com.tencent.qcloud.tim.uikit.modules.chat.layout.message.holder.IOnCustomMessageDrawListener;
 import com.tencent.qcloud.tim.uikit.modules.message.MessageInfo;
 import com.tencent.qcloud.tim.uikit.modules.message.MessageInfoUtil;
+import com.tencent.qcloud.tim.uikit.utils.ToastUtil;
 
 public class ChatLayoutHelper {
 

@@ -19,6 +19,7 @@ import com.tencent.qcloud.tim.uikit.modules.group.apply.GroupApplyManagerActivit
 import com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfo;
 import com.tencent.qcloud.tim.uikit.modules.group.info.GroupInfoActivity;
 import com.tencent.qcloud.tim.uikit.utils.TUIKitConstants;
+import com.tencent.qcloud.tim.uikit.utils.ToastUtil;
 
 import java.util.List;
 
